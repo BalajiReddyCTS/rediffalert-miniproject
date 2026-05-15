@@ -281,27 +281,27 @@ Captured automatically by `@AfterMethod` after each test, plus extra inline capt
 
 The alert *"Please enter a valid user name"* fires and is verified in code. The PNG shows the login page underneath the native alert dialog.
 
-![Empty Username](screenshots/PASS_testAlertOnEmptyUsername_20260428_143902.png)
+![Empty Username](screenshots/PASS_testAlertOnEmptyUsername_20260515_140349.png)
 
 ### Test 2 — Empty Password
 
 The alert *"Please enter your password"* fires and is verified.
 
-![Empty Password](screenshots/PASS_testAlertOnEmptyPassword_20260428_143903.png)
+![Empty Password](screenshots/PASS_testAlertOnEmptyPassword_20260515_140349.png)
 
 ### Test 3 — Forgot Password Page
 
 Captured **inline** while still on the forgot password page, before clicking Next. This shows the actual page that triggers the alert.
 
-![Forgot Password Page](screenshots/Test3_forgotPassword_page_20260428_143905.png)
+![Forgot Password Page](screenshots/Test3_forgotPassword_page_20260515_140352.png)
 
 ### Test 4 — Privacy Policy in New Tab
 
 Captured **inside** the new tab while still focused on `policy.html`. This is the meaningful evidence for this test.
 
-![Privacy Policy Page](screenshots/Test4_privacyPolicy_newTab_20260428_143909.png)
+![Privacy Policy Page](screenshots/Test4_privacyPolicy_newTab_20260515_140355.png)
 
-> **Note:** filenames include a timestamp, so update the references above when viewing screenshots from a fresh run, or rename them to fixed names if you want this README to stay in sync.
+
 
 ---
 
@@ -353,5 +353,3 @@ The `@AfterMethod` hook always runs at the end and saves a `PASS_<testName>_*.pn
 - `Test3_forgotPassword_page_*.png` — actual forgot password page
 - `Test4_privacyPolicy_newTab_*.png` — actual policy page
 - `PASS_test*_*.png` — post-cleanup state of the main window (login page)
-
-The inline captures are the meaningful evidence; the `PASS_*` files are kept as a uniform "final state" record for every test.
